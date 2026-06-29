@@ -1,0 +1,27 @@
+import React from 'react'
+
+function Education() {
+   return (
+      <>
+         <div className='container mt-5'>
+            <div className='row mt-5'>
+               <div className='col-6'>
+                  <img src='\media\images\education.svg' alt='educaation' />
+               </div>
+               <div className='col-6'>
+                  <h1> Free and open Market Education</h1>
+                  <p className='mt-4'>Varsity, the largest online stock market education book in the world covering everything
+                     from the basics to advanced trading..</p>
+                  <a href='#' style={{ textDecoration: "none" }}>Versity <i class="fa-light fa-arrow-right-long"></i></a>
+
+                  <p className='mt-4'>TradingQ&A, the most active trading and investment <br/>
+                     market related queries.</p>
+                  <a href='#' style={{ textDecoration: "none" }}>Trading Q&A <i class="fa-light fa-arrow-right-long"></i></a>
+               </div>
+            </div>
+         </div>
+      </>
+   );
+}
+
+export default Education;
