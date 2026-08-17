@@ -5,7 +5,7 @@ import GeneralContext from "./GeneralContext";
 
 import "./BuyActionWindow.css";
 
-const BuyActionWindow = ({ uid }) => {
+const SellActionWindow = ({ uid }) => {
 
    const [stockQuantity, setStockQuantity] = useState(0);
    const [stockPrice, setStockPrice] = useState(0.0);
@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid }) => {
          name: uid,
          qty: stockQuantity,
          price: stockPrice,
-         mode: "BUY",
+         mode: "SELL",
       })
       GeneralContext.closeBuyWindow();
    }
@@ -41,7 +41,7 @@ const BuyActionWindow = ({ uid }) => {
          <div className="buttons">
             <span>Margin required ₹140.65</span>
             <div>
-               <Link className="btn btn-blue" onClick={handleBuyClick}>Buy</Link>
+               <Link className="btn btn-blue" onClick={handleBuyClick}>Sell</Link>
                <Link to="" className="btn btn-grey" onClick={handleCancelClick}>Cancel</Link>
             </div>
          </div>
@@ -49,4 +49,4 @@ const BuyActionWindow = ({ uid }) => {
    );
 };
 
-export default BuyActionWindow;
+export default SellActionWindow;
